@@ -87,6 +87,7 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | objectID | String | unique id for the user post (default field) |
 | author | Pointer to User | image author |
 | image | File | image that user post | 
+| location | FIND HOW TO SAVE LOC ON PARSE | image that user post | 
 | title | String | title posted by author |
 | caption | String | image caption by author |
 | commentsCount | Number | number of comments posted to an image |
@@ -103,14 +104,17 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | age | String | age of user |
 | email | String | email for user login |
 | profileIntro | String | a small intro for user profiles |
+| bookMarks | Pointer to bookMarks | list of saved post  |
 
 
+**Comment** 
+| objectID | String | unique id for the user post (default field) |
+| author | Pointer to User | image author |
+| comment | String | comment by user |
 
-
-
-
-
-
+**Bookmarks**
+| objectID | String | unique id for the user post (default field) |
+| listofBookmarks | Pointer to Post | post that users want to save |
 
 ### Networking
 - [Add list of network requests by screen ]
