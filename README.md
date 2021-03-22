@@ -106,13 +106,16 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | profileIntro | String | a small intro for user profiles |
 | bookMarks | Pointer to bookMarks | list of saved post  |
 
-
 **Comment** 
+| Property | Type | Description |
+| -------- | ---- | ----------- | 
 | objectID | String | unique id for the user post (default field) |
 | author | Pointer to User | image author |
 | comment | String | comment by user |
 
 **Bookmarks**
+| Property | Type | Description |
+| -------- | ---- | ----------- | 
 | objectID | String | unique id for the user post (default field) |
 | listofBookmarks | Pointer to Post | post that users want to save |
 
