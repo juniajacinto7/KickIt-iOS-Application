@@ -1,5 +1,3 @@
-Julio and Junia?
-
 Original App Design Project
 ===
 
@@ -81,14 +79,12 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 <img src="https://i.imgur.com/kRNrU4D.jpg" width=600>
 
 ## Schema 
-
+### Models
+**Post**
 | Property | Type | Description |
 | -------- | ---- | ----------- | 
 | objectID | String | unique id for the user post (default field) |
 
-[This section will be completed in Unit 9]
-### Models
-[Add table of models]
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
