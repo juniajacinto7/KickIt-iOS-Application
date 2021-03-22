@@ -83,8 +83,16 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | Property | Type | Description |
 | -------- | ---- | ----------- | 
 | objectID | String | unique id for the user post (default field) |
-| author | | Pointer to User | image author |
+| author | Pointer to User | image author |
 | image | File | image that user post | 
+| title | String | title posted by author |
+| caption | String | image caption by author |
+| commentsCount | Number | number of comments posted to an image |
+| likesCount | Number | number of likes for post |
+| createdAt | DateTime | date when post is created (default field) |
+
+
+
 
 
 ### Networking
