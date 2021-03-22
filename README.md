@@ -59,8 +59,7 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 
 * Map Display
 * Profile and Settings
-* Events
-
+* Even
 **Flow Navigation** (Screen to Screen)
 
 * Forced login
@@ -84,6 +83,9 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | Property | Type | Description |
 | -------- | ---- | ----------- | 
 | objectID | String | unique id for the user post (default field) |
+| author | | Pointer to User | image author |
+| image | File | image that user post | 
+
 
 ### Networking
 - [Add list of network requests by screen ]
