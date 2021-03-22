@@ -120,6 +120,13 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | listofBookmarks | Pointer to Post | post that users want to save |
 
 ### Networking
+* Map Screen   
+* Register
+* Events Screen 
+* Chat Screen
+* User Profile
+
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
