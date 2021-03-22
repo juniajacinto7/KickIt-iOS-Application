@@ -78,7 +78,9 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 <img src="https://i.imgur.com/kRNrU4D.jpg" width=600>
 
 ## Schema 
+
 ### Models
+
 **Post**
 | Property | Type | Description |
 | -------- | ---- | ----------- | 
@@ -90,6 +92,21 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | commentsCount | Number | number of comments posted to an image |
 | likesCount | Number | number of likes for post |
 | createdAt | DateTime | date when post is created (default field) |
+
+**User**
+| Property | Type | Description |
+| -------- | ---- | ----------- | 
+| objectID | String | unique id for the user (default field) |
+| firstName | String | users first name |
+| lastName | String | users last name |
+| profilePic | File | image of user |
+| age | String | age of user |
+| email | String | email for user login |
+| profileIntro | String | a small intro for user profiles |
+
+
+
+
 
 
 
