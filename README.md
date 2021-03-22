@@ -119,10 +119,23 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | objectID | String | unique id for the user post (default field) |
 | listofBookmarks | Pointer to Post | post that users want to save |
 
+**Like**
+| Property | Type | Description |
+| -------- | ---- | ----------- | 
+| objectID | String | unique id for the user post (default field) |
+| listofBookmarks | Pointer to Post | post that users want to save |
+
 ### Networking
 * Map Screen   
+  * (Read/GET) Query all posts near 30 miles of user
 * Register
+  * (Create/POST) Create a new user object
 * Events Screen 
+  * (Read/GET) Query all posts near 30 miles of user
+  * (Create/POST) Create a new like on a post
+  * (Delete) Delete existing like
+  * (Create/POST) Create a new comment on a post
+  * (Create/POST) Create a new comment on a post
 * Chat Screen
 * User Profile
 
