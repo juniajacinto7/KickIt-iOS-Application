@@ -214,7 +214,6 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
               // There was an error. Check the errors localizedDescription.
             }
           }
-
   * (Create/POST) Create new bookmark
      ```swift
           let bookmark = PFObject(className:"Bookmark")
@@ -228,6 +227,14 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
             }
           }
   * (Delete) Delete existing bookmark
+      ```swift
+          PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
+            if (succeeded) {
+              // The array of objects was successfully deleted.
+            } else {
+              // There was an error. Check the errors localizedDescription.
+            }
+          }
 * Chat Screen
   * (Read/GET) Query all users near author
       ```swift
