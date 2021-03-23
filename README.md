@@ -104,7 +104,6 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | age | String | age of user |
 | email | String | email for user login |
 | profileIntro | String | a small intro for user profiles |
-| bookMarks | Array | list of bookmarked post by user  |
 
 **Comment** 
 | Property | Type | Description |
@@ -142,22 +141,101 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
            // TODO: Do something with posts...
             }
          }
-         ```
 * Register
   * (Create/POST) Create a new user object
+      ```swift
+          let user = PFObject(className:"User")
+          user["firstName"] = userInput
+          user["lastName"] = userInput
+          user["profilePic"] = userInput
+          user["age"] = userInput
+          user["email"] = userInput
+          user["profileIntro"] = userInput
+          user.saveInBackground { (succeeded, error)  in
+            if (succeeded) {
+              // The object has been saved.
+            } else {
+              // There was a problem, check error.description
+            }
+          }
 * Events Screen 
-  * (Read/GET) Query all posts near 30 miles of user
+  * (Read/GET) Query all posts near user
   * (Create/POST) Create a new like on a post
+      ```swift
+          let like = PFObject(className:"Like")
+          like["author"] = currentUser
+          like["like"] = true
+          like.saveInBackground { (succeeded, error)  in
+            if (succeeded) {
+              // The object has been saved.
+            } else {
+              // There was a problem, check error.description
+            }
+          }
   * (Delete) Delete existing like
+       ```swift
+          PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
+            if (succeeded) {
+              // The array of objects was successfully deleted.
+            } else {
+              // There was an error. Check the errors localizedDescription.
+            }
+          }
   * (Create/POST) Create a new comment on a post
+       ```swift
+          let comment = PFObject(className:"Comment")
+          comment["author"] = currentUser
+          comment["like"] = true
+          comment.saveInBackground { (succeeded, error)  in
+            if (succeeded) {
+              // The object has been saved.
+            } else {
+              // There was a problem, check error.description
+            }
+          }
   * (Delete) Delete existing comment
+      ```swift
+          PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
+            if (succeeded) {
+              // The array of objects was successfully deleted.
+            } else {
+              // There was an error. Check the errors localizedDescription.
+            }
+          }
+
   * (Create/POST) Create new bookmark
+     ```swift
+          let bookmark = PFObject(className:"Bookmark")
+          bookmark["author"] = currentUser
+          bookmark["like"] = true
+          bookmark.saveInBackground { (succeeded, error)  in
+            if (succeeded) {
+              // The object has been saved.
+            } else {
+              // There was a problem, check error.description
+            }
+          }
   * (Delete) Delete existing bookmark
 * Chat Screen
   * (Read/GET) Query all users near author
 * User Profile
   * (Read/GET) Query logged in user object
-  * (Update/PUT) Update user profile image
+  * (Update/PUT) Update user profile 
+      ```swift
+          let user = PFObject(className:"User")
+          user["firstName"] = userInput
+          user["lastName"] = userInput
+          user["profilePic"] = userInput
+          user["age"] = userInput
+          user["email"] = userInput
+          user["profileIntro"] = userInput
+          user.saveInBackground { (succeeded, error)  in
+            if (succeeded) {
+              // The object has been saved.
+            } else {
+              // There was a problem, check error.description
+            }
+          }
   * (Read/GET) Query all Bookmarks where user is author
      ```swift
          let query = PFQuery(className:"Bookmark")
