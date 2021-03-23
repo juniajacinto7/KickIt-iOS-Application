@@ -129,7 +129,20 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 
 ### Networking
 * Map Screen   
-  * (Read/GET) Query all posts near 30 miles of user
+  * (Read/GET) Query all posts near user
+     ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
 * Register
   * (Create/POST) Create a new user object
 * Events Screen 
@@ -141,10 +154,49 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
   * (Create/POST) Create new bookmark
   * (Delete) Delete existing bookmark
 * Chat Screen
-  * (Read/GET) Query all users near 30 miles of author
+  * (Read/GET) Query all users near author
 * User Profile
   * (Read/GET) Query logged in user object
   * (Update/PUT) Update user profile image
   * (Read/GET) Query all Bookmarks where user is author
+     ```swift
+         let query = PFQuery(className:"Bookmark")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
   * (Read/GET) Query all Posts where user is author
+     ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
   * (Read/GET) Query all Likes where user is author
+   ```swift
+         let query = PFQuery(className:"Like")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
