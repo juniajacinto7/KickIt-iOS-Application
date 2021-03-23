@@ -148,5 +148,3 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
   * (Read/GET) Query all Bookmarks where user is author
   * (Read/GET) Query all Posts where user is author
   * (Read/GET) Query all Likes where user is author
-
-- [Create basic snippets for each Parse network request]
