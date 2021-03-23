@@ -104,7 +104,7 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | age | String | age of user |
 | email | String | email for user login |
 | profileIntro | String | a small intro for user profiles |
-| bookMarks | Pointer to bookMarks | list of saved post  |
+| bookMarks | Array | list of bookmarked post by user  |
 
 **Comment** 
 | Property | Type | Description |
@@ -113,17 +113,19 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 | author | Pointer to User | image author |
 | comment | String | comment by user |
 
-**Bookmarks**
+**Bookmark**
 | Property | Type | Description |
 | -------- | ---- | ----------- | 
 | objectID | String | unique id for the user post (default field) |
-| listofBookmarks | Pointer to Post | post that users want to save |
+| author | Pointer to User | bookmark author |
+| Bookmark | Pointer to Post | post that users want to save |
 
 **Like**
 | Property | Type | Description |
 | -------- | ---- | ----------- | 
 | objectID | String | unique id for the user post (default field) |
-| listofBookmarks | Pointer to Post | post that users want to save |
+| author | Pointer to User | like author |
+| like | boolean | if a user liked a post |
 
 ### Networking
 * Map Screen   
@@ -135,11 +137,16 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
   * (Create/POST) Create a new like on a post
   * (Delete) Delete existing like
   * (Create/POST) Create a new comment on a post
-  * (Create/POST) Create a new comment on a post
+  * (Delete) Delete existing comment
+  * (Create/POST) Create new bookmark
+  * (Delete) Delete existing bookmark
 * Chat Screen
+  * (Read/GET) Query all users near 30 miles of author
 * User Profile
+  * (Read/GET) Query logged in user object
+  * (Update/PUT) Update user profile image
+  * (Read/GET) Query all Bookmarks where user is author
+  * (Read/GET) Query all Posts where user is author
+  * (Read/GET) Query all Likes where user is author
 
-
-- [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
