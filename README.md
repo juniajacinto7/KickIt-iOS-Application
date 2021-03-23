@@ -160,6 +160,18 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
           }
 * Events Screen 
   * (Read/GET) Query all posts near user
+      ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey(NEAR USER)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
   * (Create/POST) Create a new like on a post
       ```swift
           let like = PFObject(className:"Like")
@@ -218,8 +230,29 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
   * (Delete) Delete existing bookmark
 * Chat Screen
   * (Read/GET) Query all users near author
+      ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey(NEAR USER)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
 * User Profile
   * (Read/GET) Query logged in user object
+      ```swift
+          let query = PFQuery(className:"User")
+          query.getObjectInBackground(withId: "currentUser") { (User, error) in
+            if error == nil {
+              // Success!
+            } else {
+              // Fail!
+            }
+          }
   * (Update/PUT) Update user profile 
       ```swift
           let user = PFObject(className:"User")
@@ -265,11 +298,11 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
          }
          ```
   * (Read/GET) Query all Likes where user is author
-   ```swift
-         let query = PFQuery(className:"Like")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+      ```swift
+          let query = PFQuery(className:"Like")
+          query.whereKey("author", equalTo: currentUser)
+          query.order(byDescending: "createdAt")
+          query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
             if let error = error { 
                print(error.localizedDescription)
             } else if let posts = posts {
