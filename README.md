@@ -130,17 +130,6 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 ### Networking
 * Map Screen   
   * (Read/GET) Query all posts near 30 miles of user
-  let query = PFQuery(className:"Post")
-query.whereKey("author", equalTo: currentUser)
-query.order(byDescending: "createdAt")
-query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-   if let error = error { 
-      print(error.localizedDescription)
-   } else if let posts = posts {
-      print("Successfully retrieved \(posts.count) posts.")
-  // TODO: Do something with posts...
-   }
-}
 * Register
   * (Create/POST) Create a new user object
 * Events Screen 
