@@ -28,12 +28,12 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 
 **Required Must-have Stories**
 
-* User logs in to access account settings and view friends
-* User accesses a map that can focus and expand with details becoming more explicit as the map focuses
-* User can place and delete a marker on any location on the map
-* Markers have an extra option for adding text and images which can be used for details about the location or what is going on at that location
-* Users can send location invites to friends
-* Users can filter which individuals can view their markers/invites
+* [x] User logs in to access account settings and view friends
+* [ ] User accesses a map that can focus and expand with details becoming more explicit as the map focuses
+* [ ] User can place and delete a marker on any location on the map
+* [ ] Markers have an extra option for adding text and images which can be used for details about the location or what is going on at that location
+* [ ] Users can send location invites to friends
+* [ ] Users can filter which individuals can view their markers/invites
 
 **Optional Nice-to-have Stories**
 
@@ -43,7 +43,7 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 
 ### 2. Screen Archetypes
 
-* Login [ ]
+* Login
 * Register
    * Upon download or opening of the app, the user is prompted to login to access the app's features
 * Map Screen
