@@ -43,7 +43,7 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 
 ### 2. Screen Archetypes
 
-* Login
+* Login [ ]
 * Register
    * Upon download or opening of the app, the user is prompted to login to access the app's features
 * Map Screen
