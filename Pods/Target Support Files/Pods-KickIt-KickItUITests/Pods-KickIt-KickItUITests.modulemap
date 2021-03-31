@@ -1,0 +1,6 @@
+framework module Pods_KickIt_KickItUITests {
+  umbrella header "Pods-KickIt-KickItUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

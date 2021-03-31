@@ -1,0 +1,6 @@
+framework module Pods_KickIt {
+  umbrella header "Pods-KickIt-umbrella.h"
+
+  export *
+  module * { export * }
+}
