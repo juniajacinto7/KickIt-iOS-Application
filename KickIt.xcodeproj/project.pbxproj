@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3D24BA762612EF0800770E47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24BA752612EF0800770E47 /* AppDelegate.swift */; };
 		3D24BA782612EF0800770E47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24BA772612EF0800770E47 /* SceneDelegate.swift */; };
-		3D24BA7A2612EF0800770E47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24BA792612EF0800770E47 /* ViewController.swift */; };
 		3D24BA7D2612EF0800770E47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D24BA7B2612EF0800770E47 /* Main.storyboard */; };
 		3D24BA7F2612EF0900770E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D24BA7E2612EF0900770E47 /* Assets.xcassets */; };
 		3D24BA822612EF0900770E47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D24BA802612EF0900770E47 /* LaunchScreen.storyboard */; };
 		3D24BA8D2612EF0900770E47 /* KickItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24BA8C2612EF0900770E47 /* KickItTests.swift */; };
 		3D24BA982612EF0900770E47 /* KickItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24BA972612EF0900770E47 /* KickItUITests.swift */; };
+		3D817E4C26196DAE009E1E24 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D817E4B26196DAE009E1E24 /* MapScreen.swift */; };
 		552F71EC96B395104A2405CA /* Pods_KickItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF748245940C2E95B196091 /* Pods_KickItTests.framework */; };
 		59EE35798F66169344EEA609 /* Pods_KickIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7053F6F11E5A8D661FF3F /* Pods_KickIt.framework */; };
 		AA85C00867FA2FBA4F2DBA5C /* Pods_KickIt_KickItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02E6411E453D6C72F0EF215 /* Pods_KickIt_KickItUITests.framework */; };
@@ -43,7 +43,6 @@
 		3D24BA722612EF0800770E47 /* KickIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KickIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D24BA752612EF0800770E47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D24BA772612EF0800770E47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D24BA792612EF0800770E47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D24BA7C2612EF0800770E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D24BA7E2612EF0900770E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D24BA812612EF0900770E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		3D24BA932612EF0900770E47 /* KickItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KickItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D24BA972612EF0900770E47 /* KickItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickItUITests.swift; sourceTree = "<group>"; };
 		3D24BA992612EF0900770E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D817E4B26196DAE009E1E24 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		6A7D959BB5AA01AE46C01022 /* Pods-KickIt-KickItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickIt-KickItUITests.debug.xcconfig"; path = "Target Support Files/Pods-KickIt-KickItUITests/Pods-KickIt-KickItUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D5535E31E7FD80DFAED2545 /* Pods-KickIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickIt.release.xcconfig"; path = "Target Support Files/Pods-KickIt/Pods-KickIt.release.xcconfig"; sourceTree = "<group>"; };
 		76BE1B73F05192B48BA81E74 /* Pods-KickItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickItTests.debug.xcconfig"; path = "Target Support Files/Pods-KickItTests/Pods-KickItTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,11 +118,11 @@
 			children = (
 				3D24BA752612EF0800770E47 /* AppDelegate.swift */,
 				3D24BA772612EF0800770E47 /* SceneDelegate.swift */,
-				3D24BA792612EF0800770E47 /* ViewController.swift */,
 				3D24BA7B2612EF0800770E47 /* Main.storyboard */,
 				3D24BA7E2612EF0900770E47 /* Assets.xcassets */,
 				3D24BA802612EF0900770E47 /* LaunchScreen.storyboard */,
 				3D24BA832612EF0900770E47 /* Info.plist */,
+				3D817E4B26196DAE009E1E24 /* MapScreen.swift */,
 			);
 			path = KickIt;
 			sourceTree = "<group>";
@@ -155,7 +155,6 @@
 				76BE1B73F05192B48BA81E74 /* Pods-KickItTests.debug.xcconfig */,
 				C1AC469D864EBBB805EAE5C0 /* Pods-KickItTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D24BA7A2612EF0800770E47 /* ViewController.swift in Sources */,
+				3D817E4C26196DAE009E1E24 /* MapScreen.swift in Sources */,
 				3D24BA762612EF0800770E47 /* AppDelegate.swift in Sources */,
 				3D24BA782612EF0800770E47 /* SceneDelegate.swift in Sources */,
 			);
