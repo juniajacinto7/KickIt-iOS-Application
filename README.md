@@ -326,3 +326,6 @@ Here's a walkthrough of build progress:
 <img src='https://media.giphy.com/media/Gx05BeWsOjvHigSsMX/giphy.gif' />
 
 <img src='http://g.recordit.co/cDYxCQz6Pk.gif' />
+
+<img src='http://g.recordit.co/4ojFQQ0QfT.gif' />
+
