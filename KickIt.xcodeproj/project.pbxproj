@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EE81555261C11DF003578AC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE81554261C11DF003578AC /* CameraViewController.swift */; };
 		3D24BA762612EF0800770E47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24BA752612EF0800770E47 /* AppDelegate.swift */; };
 		3D24BA782612EF0800770E47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24BA772612EF0800770E47 /* SceneDelegate.swift */; };
 		3D24BA7D2612EF0800770E47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D24BA7B2612EF0800770E47 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0EF748245940C2E95B196091 /* Pods_KickItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KickItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE81554261C11DF003578AC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		1FC7053F6F11E5A8D661FF3F /* Pods_KickIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KickIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D24BA722612EF0800770E47 /* KickIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KickIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D24BA752612EF0800770E47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				3D24BA802612EF0900770E47 /* LaunchScreen.storyboard */,
 				3D24BA832612EF0900770E47 /* Info.plist */,
 				3D817E4B26196DAE009E1E24 /* MapScreen.swift */,
+				1EE81554261C11DF003578AC /* CameraViewController.swift */,
 			);
 			path = KickIt;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D817E4C26196DAE009E1E24 /* MapScreen.swift in Sources */,
+				1EE81555261C11DF003578AC /* CameraViewController.swift in Sources */,
 				3D24BA762612EF0800770E47 /* AppDelegate.swift in Sources */,
 				3D24BA782612EF0800770E47 /* SceneDelegate.swift in Sources */,
 			);
@@ -588,6 +592,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VLSBK26H;
 				INFOPLIST_FILE = KickIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -608,6 +613,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VLSBK26H;
 				INFOPLIST_FILE = KickIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
