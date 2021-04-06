@@ -34,6 +34,8 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 * [ ] Markers have an extra option for adding text and images which can be used for details about the location or what is going on at that location
 * [ ] Users can send location invites to friends
 * [ ] Users can filter which individuals can view their markers/invites
+* [x] User can log in and log out
+* [x] User can upload photos
 
 **Optional Nice-to-have Stories**
 
