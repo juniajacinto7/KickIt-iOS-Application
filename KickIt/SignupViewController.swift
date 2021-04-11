@@ -2,7 +2,7 @@
 //  SignupViewController.swift
 //  KickIt
 //
-//  Created by Julio C Lopez on 4/10/21.
+//  Created by Junia Jacinto
 //
 
 import UIKit
