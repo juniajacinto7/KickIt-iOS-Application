@@ -14,6 +14,7 @@ class MapScreen: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var goButton: UIButton!
+    @IBOutlet weak var markSpotButton: UIButton!
     
     let geoCoder = CLGeocoder()
     var directionsArray: [MKDirections] = []
@@ -25,7 +26,14 @@ class MapScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         goButton.layer.cornerRadius = goButton.frame.size.height/2
+        markSpotButton.layer.cornerRadius = goButton.frame.size.height/2
         checkLocationServices()
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
         
     func setupLocationManager() {
@@ -38,6 +46,18 @@ class MapScreen: UIViewController {
             let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
             mapView.setRegion(region, animated: true)
         }
+    }
+    
+    @IBAction func markSpotButtonTapped(_ sender: UIButton) {
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2DMake(mapView.centerCoordinate.latitude, mapView.centerCoordinate.longitude)
+        //annotation.title = "Spot Title"
+        //annotation.subtitle = "Short spot description"
+        self.mapView.addAnnotation(annotation)
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        self.performSegue(withIdentifier: "FeedViewController", sender: nil)
     }
         
     func checkLocationServices() {
@@ -52,7 +72,7 @@ class MapScreen: UIViewController {
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
-            startTackingUserLocation()
+            startTrackingUserLocation()
         case .denied:
             // Show alert instructing them how to turn on permissions
             break
@@ -69,7 +89,7 @@ class MapScreen: UIViewController {
     }
         
         
-    func startTackingUserLocation() {
+    func startTrackingUserLocation() {
         mapView.showsUserLocation = true
         centerViewOnUserLocation()
         locationManager.startUpdatingLocation()

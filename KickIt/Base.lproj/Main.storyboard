@@ -83,42 +83,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlM-7q-7SF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.35514018691588" y="91.360691144708426"/>
+            <point key="canvasLocation" x="915" y="91"/>
         </scene>
         <!--MapScreen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController title="MapScreen" id="BYZ-38-t0r" customClass="MapScreen" customModule="KickIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nWf-af-rXS">
-                                <rect key="frame" x="0.0" y="74" width="428" height="818"/>
+                                <rect key="frame" x="0.0" y="56" width="428" height="728"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="yW9-LU-7gJ"/>
                                 </connections>
                             </mapView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GpsBIASS" translatesAutoresizingMaskIntoConstraints="NO" id="633-oe-Rbk">
-                                <rect key="frame" x="194" y="418" width="40" height="40"/>
+                                <rect key="frame" x="194" y="381" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="7gD-Qn-dIO"/>
                                     <constraint firstAttribute="height" constant="40" id="VaC-C2-C4I"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVT-e2-LMW">
-                                <rect key="frame" x="0.0" y="842" width="428" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="elP-Nl-tjQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOQ-Ju-o8F">
-                                <rect key="frame" x="320" y="758" width="88" height="47"/>
+                                <rect key="frame" x="301" y="713" width="85" height="47"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="dwx-HE-m0Z"/>
+                                    <constraint firstAttribute="width" constant="85" id="mfz-Pp-1Ii"/>
+                                </constraints>
                                 <state key="normal" title="GO">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -126,34 +120,67 @@
                                     <action selector="goButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D74-GH-6OB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q21-YA-Hmu">
+                                <rect key="frame" x="48" y="713" width="85" height="47"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="U19-x1-p1h"/>
+                                    <constraint firstAttribute="height" constant="47" id="ekL-PX-XaG"/>
+                                </constraints>
+                                <state key="normal" title="MARK SPOT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="markSpotButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3BT-kj-htb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVT-e2-LMW">
+                                <rect key="frame" x="0.0" y="781" width="428" height="57"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JVT-e2-LMW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6FB-dr-1z1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bOQ-Ju-o8F" secondAttribute="trailing" constant="20" id="8hI-gh-hen"/>
+                            <constraint firstItem="JVT-e2-LMW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Uc-zf-nSz"/>
+                            <constraint firstItem="JVT-e2-LMW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AvQ-re-dZG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nWf-af-rXS" secondAttribute="bottom" constant="54" id="Bx3-57-18N"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nWf-af-rXS" secondAttribute="trailing" constant="-20" id="CV4-AA-j9u"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JVT-e2-LMW" secondAttribute="bottom" id="IUH-3O-0Fi"/>
-                            <constraint firstItem="633-oe-Rbk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-25" id="Ofz-SG-bzl"/>
-                            <constraint firstItem="nWf-af-rXS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="UbH-9P-6kz"/>
-                            <constraint firstItem="JVT-e2-LMW" firstAttribute="top" secondItem="bOQ-Ju-o8F" secondAttribute="bottom" constant="37" id="Ynu-Zy-s3F"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JVT-e2-LMW" secondAttribute="trailing" id="bQi-iX-Dn5"/>
+                            <constraint firstItem="JVT-e2-LMW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Che-Zx-j1h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bOQ-Ju-o8F" secondAttribute="trailing" constant="42" id="HhU-XE-1wc"/>
+                            <constraint firstItem="nWf-af-rXS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LOH-4P-Uca"/>
+                            <constraint firstItem="633-oe-Rbk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-35" id="Ofz-SG-bzl"/>
+                            <constraint firstItem="nWf-af-rXS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RR0-2O-AZ7"/>
+                            <constraint firstItem="bOQ-Ju-o8F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="657" id="RW5-Qn-rpL"/>
+                            <constraint firstItem="nWf-af-rXS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="UbH-9P-6kz"/>
                             <constraint firstItem="nWf-af-rXS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="j1p-n9-lq8"/>
-                            <constraint firstItem="bOQ-Ju-o8F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="320" id="kTo-ug-nXj"/>
-                            <constraint firstItem="bOQ-Ju-o8F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="714" id="qrd-sO-bxe"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="nWf-af-rXS" secondAttribute="bottom" id="xTB-h7-111"/>
+                            <constraint firstItem="nWf-af-rXS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jRU-1p-USK"/>
+                            <constraint firstItem="JVT-e2-LMW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kFB-0M-pc7"/>
+                            <constraint firstItem="JVT-e2-LMW" firstAttribute="top" secondItem="Q21-YA-Hmu" secondAttribute="bottom" constant="21" id="mMT-Dm-9sX"/>
+                            <constraint firstItem="Q21-YA-Hmu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="657" id="s6Q-cf-vJm"/>
+                            <constraint firstItem="JVT-e2-LMW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uaK-ze-pZg"/>
+                            <constraint firstItem="JVT-e2-LMW" firstAttribute="top" secondItem="bOQ-Ju-o8F" secondAttribute="bottom" constant="21" id="vqL-xN-Flp"/>
+                            <constraint firstItem="Q21-YA-Hmu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="wWp-br-iqJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nWf-af-rXS" secondAttribute="bottom" constant="54" id="xTB-h7-111"/>
+                            <constraint firstItem="JVT-e2-LMW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yD8-uo-YHB"/>
                             <constraint firstItem="633-oe-Rbk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yUA-AA-uwo"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="YGE-c3-pXd"/>
                     <connections>
                         <outlet property="addressLabel" destination="JVT-e2-LMW" id="Pa5-9F-hep"/>
                         <outlet property="goButton" destination="bOQ-Ju-o8F" id="mDb-gh-woN"/>
                         <outlet property="mapView" destination="nWf-af-rXS" id="rzS-se-TpY"/>
+                        <outlet property="markSpotButton" destination="Q21-YA-Hmu" id="8zH-CK-xKa"/>
+                        <segue destination="q8l-3g-2CD" kind="presentation" identifier="FeedViewController" id="D5G-A2-kHs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2476" y="301"/>
+            <point key="canvasLocation" x="63.084112149532707" y="90.712742980561558"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="vTA-Tq-j9n">
@@ -222,7 +249,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="906" y="91"/>
+            <point key="canvasLocation" x="1813" y="91"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="69i-t9-tn5">
@@ -413,7 +440,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="q8l-3g-2CD" kind="relationship" relationship="rootViewController" id="BEJ-nc-EZ0"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="78t-eM-b3N"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNQ-kI-8zu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -422,7 +449,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kOz-JM-2s3"/>
+        <segue reference="6l2-n8-W4s"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="GpsBIASS" width="512" height="512"/>
@@ -432,6 +459,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
