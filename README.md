@@ -333,4 +333,4 @@ Here's a walkthrough of build progress:
 
 Here's a walkthrough of build progress for week 2:
 
-<img src='http://g.recordit.co/OE0cV0gnj4.gif' />
+<img src='https://media.giphy.com/media/ZRhZRIBIXx5D2vCaXa/giphy.gif' />
