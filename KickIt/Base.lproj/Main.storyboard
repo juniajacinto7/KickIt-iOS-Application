@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Feed View Controller-->
+        <!--Events-->
         <scene sceneID="7m3-Af-y9v">
             <objects>
                 <viewController id="q8l-3g-2CD" customClass="FeedViewController" customModule="KickIt" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                         <viewLayoutGuide key="safeArea" id="4gr-MY-3pC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Lij-he-kMy">
+                    <navigationItem key="navigationItem" title="Events" id="Lij-he-kMy">
                         <barButtonItem key="rightBarButtonItem" title="+" id="aSJ-hc-hBS">
                             <connections>
                                 <segue destination="udc-1l-OuD" kind="presentation" id="2sF-M8-Jbb"/>
@@ -169,7 +169,7 @@
                             <constraint firstItem="633-oe-Rbk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yUA-AA-uwo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YGE-c3-pXd"/>
+                    <navigationItem key="navigationItem" title="Map" id="YGE-c3-pXd"/>
                     <connections>
                         <outlet property="addressLabel" destination="JVT-e2-LMW" id="Pa5-9F-hep"/>
                         <outlet property="goButton" destination="bOQ-Ju-o8F" id="mDb-gh-woN"/>
@@ -250,7 +250,7 @@
             </objects>
             <point key="canvasLocation" x="474" y="1583"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="51g-Q6-Jzu">
             <objects>
                 <viewController id="a0y-9d-Whh" customClass="ProfileViewController" customModule="KickIt" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,7 +287,7 @@
                         <viewLayoutGuide key="safeArea" id="mbK-K7-XSB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qD7-Un-HAc"/>
+                    <navigationItem key="navigationItem" title="Profile" id="qD7-Un-HAc"/>
                     <connections>
                         <outlet property="profileFirst" destination="CTe-k4-P31" id="KW9-Xa-l9x"/>
                         <outlet property="profileLast" destination="wXA-tb-r8a" id="aUV-gn-cA3"/>
