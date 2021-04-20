@@ -51,13 +51,25 @@ class MapScreen: UIViewController {
     @IBAction func markSpotButtonTapped(_ sender: UIButton) {
         let annotation = MKPointAnnotation()
         annotation.coordinate = CLLocationCoordinate2DMake(mapView.centerCoordinate.latitude, mapView.centerCoordinate.longitude)
-        //annotation.title = "Spot Title"
-        //annotation.subtitle = "Short spot description"
         self.mapView.addAnnotation(annotation)
+        
+        annotation.subtitle = self.addressLabel.text
+        let vc = storyboard?.instantiateViewController(identifier: "CameraViewController") as! CameraViewController
+        vc.modalPresentationStyle = .fullScreen
+        vc.completionHandler = { text in
+            annotation.title = text
+        }
+        present(vc,animated: true)
     }
     
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        self.performSegue(withIdentifier: "FeedViewController", sender: nil)
+//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+//        self.performSegue(withIdentifier: "CameraViewController", sender: nil)
+//    }
+    
+    func removeAnnotation(_ annotation: MKAnnotation) {
+        for annotation in self.mapView.annotations {
+            self.mapView.removeAnnotation(annotation)
+        }
     }
         
     func checkLocationServices() {

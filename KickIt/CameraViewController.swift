@@ -14,6 +14,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var commentField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
+    
+    public var completionHandler: ((String?) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +28,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         post["caption"] = commentField.text!
         post["author"] = PFUser.current()!
         post["description"] = descriptionField.text!
+        
+        completionHandler?(commentField.text)
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
