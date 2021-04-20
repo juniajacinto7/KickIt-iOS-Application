@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlM-7q-7SF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2714.0186915887848" y="90.712742980561558"/>
+            <point key="canvasLocation" x="474" y="809"/>
         </scene>
         <!--MapScreen-->
         <scene sceneID="tne-QT-ifu">
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-785" y="918"/>
+            <point key="canvasLocation" x="-784" y="809"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="vTA-Tq-j9n">
@@ -248,7 +248,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3612.6168224299063" y="90.712742980561558"/>
+            <point key="canvasLocation" x="474" y="1583"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="51g-Q6-Jzu">
@@ -297,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijA-IU-d3F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5341.1214953271028" y="90.712742980561558"/>
+            <point key="canvasLocation" x="1772" y="809"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="69i-t9-tn5">
@@ -497,11 +497,11 @@
             </objects>
             <point key="canvasLocation" x="-1759" y="-1460"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="StS-tq-Zg8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uxd-dy-wU6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1Ax-u0-aX9"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="1Ax-u0-aX9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="opO-FP-tgK">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="56"/>
@@ -516,11 +516,11 @@
             </objects>
             <point key="canvasLocation" x="-783.64485981308405" y="91.360691144708426"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="Mnt-Tr-gnE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J6b-rs-3In" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="M4S-Ai-utD"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="M4S-Ai-utD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fQU-H7-Wt6">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="56"/>
@@ -533,13 +533,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBf-hF-sdF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4441.1214953271028" y="90.712742980561558"/>
+            <point key="canvasLocation" x="1773" y="91"/>
         </scene>
-        <!--Item-->
+        <!--Events-->
         <scene sceneID="rfM-wN-ACh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T1V-AA-i6x" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tHb-oW-gcd"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="calendar" catalog="system" id="tHb-oW-gcd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="asq-Xl-rNb">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="56"/>
@@ -560,7 +560,10 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="GpsBIASS" width="512" height="512"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
