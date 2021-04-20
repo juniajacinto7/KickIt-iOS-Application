@@ -28,7 +28,7 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 
 **Required Must-have Stories**
 
-* [ ] User logs in to access account settings and view friends
+* [x] User logs in to access account settings and view friends
 * [x] User accesses a map that can focus and expand with details becoming more explicit as the map focuses
 * [x] User can place and delete a marker on any location on the map
 * [x] Markers have an extra option for adding text and images which can be used for details about the location or what is going on at that location
@@ -39,7 +39,7 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 
 **Optional Nice-to-have Stories**
 
-* [ ] Map visually displays popularity/activity hotspots
+* [x] Map visually displays popularity/activity hotspots
 * [ ] Videos can be applied to markers
 * [ ] Users can rate hotspots/activities
 
@@ -323,5 +323,5 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
          
 ## Video Walkthrough
 
-Here's a walkthrough of build progress (Unit 12):
+<img src="http://g.recordit.co/qaWZazTzwb.gif" width=250><br>
 
