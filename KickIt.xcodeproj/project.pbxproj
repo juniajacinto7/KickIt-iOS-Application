@@ -22,6 +22,7 @@
 		3D817E4C26196DAE009E1E24 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D817E4B26196DAE009E1E24 /* MapScreen.swift */; };
 		552F71EC96B395104A2405CA /* Pods_KickItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF748245940C2E95B196091 /* Pods_KickItTests.framework */; };
 		59EE35798F66169344EEA609 /* Pods_KickIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7053F6F11E5A8D661FF3F /* Pods_KickIt.framework */; };
+		5BE8E152262EA31B00C2B108 /* exampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8E151262EA31B00C2B108 /* exampleViewController.swift */; };
 		AA85C00867FA2FBA4F2DBA5C /* Pods_KickIt_KickItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02E6411E453D6C72F0EF215 /* Pods_KickIt_KickItUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		3D24BA972612EF0900770E47 /* KickItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickItUITests.swift; sourceTree = "<group>"; };
 		3D24BA992612EF0900770E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D817E4B26196DAE009E1E24 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		5BE8E151262EA31B00C2B108 /* exampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleViewController.swift; sourceTree = "<group>"; };
 		6A7D959BB5AA01AE46C01022 /* Pods-KickIt-KickItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickIt-KickItUITests.debug.xcconfig"; path = "Target Support Files/Pods-KickIt-KickItUITests/Pods-KickIt-KickItUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D5535E31E7FD80DFAED2545 /* Pods-KickIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickIt.release.xcconfig"; path = "Target Support Files/Pods-KickIt/Pods-KickIt.release.xcconfig"; sourceTree = "<group>"; };
 		76BE1B73F05192B48BA81E74 /* Pods-KickItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickItTests.debug.xcconfig"; path = "Target Support Files/Pods-KickItTests/Pods-KickItTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				1EA84CE22622572E00B55CCF /* SignupViewController.swift */,
 				1EA84CE7262263FF00B55CCF /* PostCell.swift */,
 				1EA84CEC2622699400B55CCF /* FeedViewController.swift */,
+				5BE8E151262EA31B00C2B108 /* exampleViewController.swift */,
 			);
 			path = KickIt;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				1EA84CE32622572E00B55CCF /* SignupViewController.swift in Sources */,
 				1EE81555261C11DF003578AC /* CameraViewController.swift in Sources */,
 				3D24BA762612EF0800770E47 /* AppDelegate.swift in Sources */,
+				5BE8E152262EA31B00C2B108 /* exampleViewController.swift in Sources */,
 				1EA84CD92622512100B55CCF /* LoginViewController.swift in Sources */,
 				3D24BA782612EF0800770E47 /* SceneDelegate.swift in Sources */,
 				1EA84CED2622699400B55CCF /* FeedViewController.swift in Sources */,
