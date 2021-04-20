@@ -10,15 +10,17 @@ import Parse
 
 class ProfileViewController: UIViewController {
 
+    
     @IBOutlet weak var profilePicture: UIImageView!
-    @IBOutlet weak var profileFirstName: UILabel!
-    @IBOutlet weak var profileLastName: UILabel!
+    @IBOutlet weak var profileFirst: UILabel!
+    @IBOutlet weak var profileLast: UILabel!
     @IBOutlet weak var profileUsername: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let query = PFUser.current()?.username
-        print(profileUsername.text = query)
+     
+        let query1 = PFUser.current()?.username
+        profileUsername.text = query1
 
         // Do any additional setup after loading the view.
     }
