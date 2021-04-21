@@ -10,8 +10,6 @@ import Parse
 import AlamofireImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-
 
     @IBOutlet weak var tableView: UITableView!
     var posts = [PFObject]()
