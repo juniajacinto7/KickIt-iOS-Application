@@ -46,6 +46,14 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XN0-WL-TBj">
+                                                    <rect key="frame" x="312" y="112" width="72" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button" image="bookmark" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="bookmarkButton:" destination="q8l-3g-2CD" eventType="touchUpInside" id="tFB-9W-DcY"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="a1g-L4-TtS" secondAttribute="bottom" constant="8" id="26i-nY-rT3"/>
@@ -83,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlM-7q-7SF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="809"/>
+            <point key="canvasLocation" x="473.83177570093454" y="808.63930885529169"/>
         </scene>
         <!--MapScreen-->
         <scene sceneID="tne-QT-ifu">
@@ -248,7 +256,48 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="474" y="1583"/>
+            <point key="canvasLocation" x="474" y="1587"/>
+        </scene>
+        <!--Camera Profile View Controller-->
+        <scene sceneID="DoH-vX-xZ7">
+            <objects>
+                <viewController id="vHp-zl-qng" customClass="CameraProfileViewController" customModule="KickIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kUM-Ny-ddy">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Qk-d5-Gik">
+                                <rect key="frame" x="26" y="132.33333333333348" width="377" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QZZ-0E-rw7" appends="YES" id="3Fz-2J-LcL"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcQ-vU-K3m">
+                                <rect key="frame" x="190" y="546" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitButton:" destination="vHp-zl-qng" eventType="touchUpInside" id="BR0-t3-DZT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kDx-vC-4z2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="4Qk-d5-Gik" id="LHl-zr-y0d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNo-EM-tNu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QZZ-0E-rw7">
+                    <connections>
+                        <action selector="onCameraButton:" destination="vHp-zl-qng" id="Uii-49-fup"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1771.9626168224297" y="1586.8250539956805"/>
         </scene>
         <!--Profile-->
         <scene sceneID="51g-Q6-Jzu">
@@ -287,7 +336,13 @@
                         <viewLayoutGuide key="safeArea" id="mbK-K7-XSB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="qD7-Un-HAc"/>
+                    <navigationItem key="navigationItem" title="Profile" id="qD7-Un-HAc">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="camera" catalog="system" id="rTB-fg-Sbs">
+                            <connections>
+                                <segue destination="vHp-zl-qng" kind="presentation" id="23s-Y2-86G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="profileFirst" destination="CTe-k4-P31" id="KW9-Xa-l9x"/>
                         <outlet property="profileLast" destination="wXA-tb-r8a" id="aUV-gn-cA3"/>
@@ -560,7 +615,10 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="GpsBIASS" width="512" height="512"/>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="camera.viewfinder" catalog="system" width="128" height="115"/>
         <image name="folder" catalog="system" width="128" height="97"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="person" catalog="system" width="128" height="117"/>

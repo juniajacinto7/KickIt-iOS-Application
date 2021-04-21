@@ -15,6 +15,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
     var posts = [PFObject]()
+    var selectedPost: PFObject!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,22 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func bookmarkButton(_ sender: Any) {
+        let bookmark = PFObject(className: "Bookmark")
+        bookmark["post"] = selectedPost
+        bookmark["author"] = PFUser.current()!
+        
+        selectedPost.add(bookmark, forKey: "comments")
+        
+        selectedPost.saveInBackground { (success, error) in
+            if success {
+                print("Comment saved")
+            } else {
+                print("Error saving comment")
+            }
+        }
+        print("bookanrked")
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -63,6 +80,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = posts[indexPath.section]
+        selectedPost = post
+        }
+        
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -74,4 +98,4 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     */
 
-}
+

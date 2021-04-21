@@ -12,6 +12,7 @@
 		1EA84CE8262263FF00B55CCF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA84CE7262263FF00B55CCF /* PostCell.swift */; };
 		1EA84CED2622699400B55CCF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA84CEC2622699400B55CCF /* FeedViewController.swift */; };
 		1EA84CFD262E96A100B55CCF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA84CFC262E96A100B55CCF /* ProfileViewController.swift */; };
+		1EA84D02262FFB7300B55CCF /* CameraProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA84D01262FFB7300B55CCF /* CameraProfileViewController.swift */; };
 		1EE81555261C11DF003578AC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE81554261C11DF003578AC /* CameraViewController.swift */; };
 		3D24BA762612EF0800770E47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24BA752612EF0800770E47 /* AppDelegate.swift */; };
 		3D24BA782612EF0800770E47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24BA772612EF0800770E47 /* SceneDelegate.swift */; };
@@ -50,6 +51,7 @@
 		1EA84CE7262263FF00B55CCF /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		1EA84CEC2622699400B55CCF /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1EA84CFC262E96A100B55CCF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1EA84D01262FFB7300B55CCF /* CameraProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraProfileViewController.swift; sourceTree = "<group>"; };
 		1EE81554261C11DF003578AC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		1FC7053F6F11E5A8D661FF3F /* Pods_KickIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KickIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D24BA722612EF0800770E47 /* KickIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KickIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 				1EA84CE7262263FF00B55CCF /* PostCell.swift */,
 				1EA84CEC2622699400B55CCF /* FeedViewController.swift */,
 				1EA84CFC262E96A100B55CCF /* ProfileViewController.swift */,
+				1EA84D01262FFB7300B55CCF /* CameraProfileViewController.swift */,
 			);
 			path = KickIt;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				3D817E4C26196DAE009E1E24 /* MapScreen.swift in Sources */,
 				1EA84CE32622572E00B55CCF /* SignupViewController.swift in Sources */,
 				1EE81555261C11DF003578AC /* CameraViewController.swift in Sources */,
+				1EA84D02262FFB7300B55CCF /* CameraProfileViewController.swift in Sources */,
 				3D24BA762612EF0800770E47 /* AppDelegate.swift in Sources */,
 				1EA84CD92622512100B55CCF /* LoginViewController.swift in Sources */,
 				3D24BA782612EF0800770E47 /* SceneDelegate.swift in Sources */,
