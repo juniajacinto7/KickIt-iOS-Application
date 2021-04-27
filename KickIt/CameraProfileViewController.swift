@@ -1,22 +1,17 @@
 //
-//  CameraViewController.swift
+//  CameraProfileViewController.swift
 //  KickIt
 //
-//  Created by Julio C Lopez on 4/5/21.
+//  Created by Julio C Lopez on 4/20/21.
 //
 
 import UIKit
 import AlamofireImage
 import Parse
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class CameraProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var commentField: UITextField!
-    @IBOutlet weak var descriptionField: UITextField!
-    
-    public var completionHandler: ((String?) -> Void)?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,19 +19,15 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func onSubmitButton(_ sender: Any) {
-        let post = PFObject(className: "Posts")
-        post["caption"] = commentField.text!
-        post["author"] = PFUser.current()!
-        post["description"] = descriptionField.text!
-        
-        completionHandler?(commentField.text)
+        let user = PFUser.current()
+       
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
         
-        post["image"] = file
+        user?["image"] = file
         
-        post.saveInBackground { (success, error) in
+        user!.saveInBackground { (success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
                 print("saved!")
@@ -45,6 +36,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             }
         }
     }
+    
     @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self
@@ -56,8 +48,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             picker.sourceType = .photoLibrary
         }
         present(picker, animated: true, completion: nil)
-        
     }
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage
@@ -69,7 +61,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         dismiss(animated: true, completion: nil)
         
     }
-    
     /*
     // MARK: - Navigation
 
