@@ -404,7 +404,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="0f8-Ia-U7c">
             <objects>
-                <tabBarController id="mSZ-f4-jR2" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="hello" id="mSZ-f4-jR2" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="RDQ-fj-Wua"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B5f-if-Boa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -538,7 +538,7 @@
         <!--Events-->
         <scene sceneID="rfM-wN-ACh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T1V-AA-i6x" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="T1V-AA-i6x" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Events" image="calendar" catalog="system" id="tHb-oW-gcd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="asq-Xl-rNb">
