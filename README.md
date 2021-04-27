@@ -14,7 +14,7 @@ Original App Design Project
 KickIt is a casual hangout app that allows users to mark interesting locations on a map for their friends and, if they choose, other users. Users can create location invites that prompt friends and/or other users on their devices. The app provides directions for users that accept the invites.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
+
 - **Category:** Social Media / Travel
 - **Mobile:** KickIt would primarily be more effective on mobile but future development for laptops and desktops may be viable for providing more access options for users.
 - **Story:** Provides a map layout which users can place markers and images onto. The markers have an extra option for invites that users can fill out and send to friends and/or random users. The app sends a notification and an invite to the sendee and if the sendee clicks accept then the map sends directons.
@@ -32,8 +32,6 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 * [x] User accesses a map that can focus and expand with details becoming more explicit as the map focuses
 * [x] User can place and delete a marker on any location on the map
 * [x] Markers have an extra option for adding text and images which can be used for details about the location or what is going on at that location
-* [ ] Users can send location invites to friends
-* [ ] Users can filter which individuals can view their markers/invites
 * [x] User can log in and log out
 * [x] User can upload photos
 
