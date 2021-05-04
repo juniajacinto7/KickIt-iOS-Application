@@ -320,6 +320,10 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
          ```
          
 ## Video Walkthrough
+**Presintation**
+<img src="http://g.recordit.co/PwXFGWAJ5d.gif" width=250><br>
 
-<img src="http://g.recordit.co/ZT1RWx1tsB.gif" width=250><br>
+**App Demo**
+<img src="http://g.recordit.co/uZh88amdB4.gif" width=250><br>
+
 
