@@ -1,7 +1,7 @@
 Original App Design Project
 ===
 
-# KickIt
+# KickIt - iOS Application
 
 ## Table of Contents
 1. [Overview](#Overview)
