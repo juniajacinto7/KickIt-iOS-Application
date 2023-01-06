@@ -1,6 +1,3 @@
-Original App Design Project
-===
-
 # KickIt - iOS Application
 
 ## Table of Contents
@@ -34,12 +31,8 @@ KickIt is a casual hangout app that allows users to mark interesting locations o
 * [x] Markers have an extra option for adding text and images which can be used for details about the location or what is going on at that location
 * [x] User can log in and log out
 * [x] User can upload photos
-
-**Optional Nice-to-have Stories**
-
 * [x] Map visually displays popularity/activity hotspots
-* [ ] Videos can be applied to markers
-* [ ] Users can rate hotspots/activities
+
 
 ### 2. Screen Archetypes
 
